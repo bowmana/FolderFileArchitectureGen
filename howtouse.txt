@@ -1,1 +1,62 @@
-py printFolderFileStructure.py --multiple-folders
+py printFolderFileStructure.py
+select desired folder
+then gui appears to select which elements to include
+then output is printed to console
+
+example:
+└── OpenInvite/
+    ├── .gitignore
+    ├── app/
+    │   ├── (auth)/
+    │   │   ├── forgot-password.tsx
+    │   │   ├── login.tsx
+    │   │   └── signup.tsx
+    │   ├── (tabs)/
+    │   │   ├── _layout.tsx
+    │   │   ├── example.tsx
+    │   │   ├── index.tsx
+    │   │   └── settings.tsx
+    │   ├── +not-found.tsx
+    │   ├── _layout.tsx
+    │   └── profile.tsx
+    ├── app.json
+    ├── components/
+    │   ├── AuthRootGuard.tsx
+    │   ├── ExternalLink.tsx
+    │   ├── HapticTab.tsx
+    │   ├── Header.tsx
+    │   ├── ProfileIcon.tsx
+    │   ├── ThemedButton.tsx
+    │   ├── ThemedCard.tsx
+    │   ├── ThemedDivider.tsx
+    │   ├── ThemedText.tsx
+    │   ├── ThemedTextField.tsx
+    │   │   └── __snapshots__/
+    │   │       └── ThemedText-test.tsx.snap
+    │   └── ui/
+    │       ├── IconSymbol.ios.tsx
+    │       ├── IconSymbol.tsx
+    │       ├── TabBarBackground.ios.tsx
+    │       └── TabBarBackground.tsx
+    ├── constants/
+    │   └── Colors.ts
+    ├── expo-env.d.ts
+    ├── firebase/
+    │   └── config.ts
+    ├── hooks/
+    │   ├── reduxHooks.ts
+    │   ├── useColorScheme.ts
+    │   ├── useColorScheme.web.ts
+    │   └── useThemeColor.ts
+    ├── package.json
+    ├── services/
+    │   ├── authService.ts
+    │   └── firebaseAuthService.ts
+    ├── store/
+    │   ├── authSlice.ts
+    │   └── index.ts
+    └── tsconfig.json
+
+
+    
+This is great for quickly giving context to agent about project structure.
